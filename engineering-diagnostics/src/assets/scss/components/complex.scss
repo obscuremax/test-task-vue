@@ -1,0 +1,32 @@
+.complex {
+	padding: 104px 0 100px;
+	background: $c-white;
+	&__title {
+		font-family: 'Bebas Neue';
+		font-weight: bold;
+		font-size: 80px;
+		line-height: 64px;
+		text-align: center;
+		letter-spacing: 5px;
+		background-image: linear-gradient(180deg, #60B6FF 0%, rgba(0, 78, 134, 0.8) 100%);
+		color: transparent;
+		background-clip: text;
+		margin-bottom: 36px;
+		text-align: center;
+		@include landscapePhones {
+			font-size: 60px;
+			line-height: 1.1;
+		}
+	}
+	&__descr {
+		width: 100%;
+		max-width: 503px;
+		text-align: center;
+		font-family: 'Gilroy';
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 28px;
+		color: $c-stone-dark;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,166 @@
+.head {
+	&__container {
+		padding-top: 128px;
+		padding-bottom: 70px;
+		border-right: 1px solid rgba(255, 255, 255, .1);
+		border-left: 1px solid rgba(255, 255, 255, .1);
+		position: relative;
+		&::before, &::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			width: 1px;
+			height: 100%;
+			background-color: $c-white;
+			opacity: 0.1;
+			display: inline-block;
+		}
+		&::before {
+			left: 34%;
+		}
+		&::after {
+			right: 32.4%;
+		}
+	}
+	&__inner {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		row-gap: 63px;
+		justify-content: space-between;
+		width: 100%;
+	}
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1180px;
+		margin: 0 auto;
+	}
+	&__box:first-child {
+		@include tablet {
+			flex-direction: column;
+			gap: 50px;
+		}
+	}
+	&__box:last-child {
+		align-items: flex-end;
+		max-width: 100%;
+		@include largeDesktops-x {
+			flex-wrap: wrap;
+			row-gap: 30px;
+		}
+	}
+	&__examination {
+		width: 100%;
+		max-width: 580px;
+	}
+	&__title {
+		font-family: "Gilroy";
+		font-weight: bold;
+		font-size: 42px;
+		line-height: 51px;
+		letter-spacing: -0.5px;
+		color: $c-white;
+		margin-bottom: 38px;
+		@include tablet {
+			text-align: center;
+		}
+	}
+	&__desrc {
+		font-weight: 600;
+		width: 100%;
+		max-width: 363px;
+		font-size: 20px;
+		line-height: 34px;
+		color: $c-white;
+		opacity: 0.7;
+		@include tablet {
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+	&__send {
+		width: 100%;
+		max-width: 340px;
+		@include tablet {
+			margin: 0 auto;
+		}
+	}
+	&__btn {
+		margin-bottom: 40px;
+	}
+	&__text {
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 28px;
+		color: $c-white;
+		@include tablet {
+			text-align: center;
+		}
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		margin-bottom: -5px;
+		column-gap: 100px;
+		@include largeDesktops-x {
+			margin: auto;
+		}
+		@include largeDesktops {
+			flex-wrap: wrap;
+			row-gap: 20px;
+		}
+	}
+	&__list-item {
+		display: flex;
+		align-items: center;
+		column-gap: 30px;
+		max-width: 260px;
+		p {
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 28px;
+			letter-spacing: -0.5px;
+			color: $c-white;
+		}
+	}
+	&__list-item:last-child {
+		max-width: 300px;
+	}
+	&__video {
+		width: 220px;
+		height: 220px;
+		position: relative;
+		@include largeDesktops-x {
+			margin: auto;
+		}
+	}
+	&__player {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 140px;
+		height: 140px;
+		border-radius: 50%;
+		background-image: url('../../assets/image/content/man.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&__play {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		&:hover {
+			transform: translate(-50%, -50%) scale(1.5);
+		}
+	}
+}
+
+
+

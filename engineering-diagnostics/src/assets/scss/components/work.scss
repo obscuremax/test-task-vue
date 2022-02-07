@@ -1,0 +1,129 @@
+.work {
+	&__inner {
+		position: relative;
+		padding: 70px 0 77px;
+	}
+	&__box-wrap {
+		display: flex;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		@include largeDesktops-x {
+			flex-direction: column;
+		}
+	}
+	&__box {
+		width: 50%;
+		height: 100%;
+		background-color: $c-white;
+		@include largeDesktops-x {
+			width: 100%;
+		}
+	}
+	&__box:last-child {
+		background-color: $c-secondary;
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@include largeDesktops-x {
+			flex-direction: column;
+			gap: 40px;
+		}
+	}
+	&__block:nth-child(1) {
+		@include largeDesktops-x {
+			align-self: flex-start;
+		}
+	}
+	&__block:nth-child(2) {
+		margin-right: 40px;
+		@include largeDesktops-x {
+			margin: 0 auto;
+		}
+	}
+	&__block:nth-child(3) {
+		@include largeDesktops-x {
+			align-self: flex-end;
+		}
+	}
+	&__block-img {
+		width: 300px;
+		height: 295px;
+		object-fit: contain;
+		@include smallDesktops {
+			width: 200px;
+			height: 200px;
+		}
+	}
+	&__info, &__content {
+		width: 460px;
+		max-width: 460px;
+		letter-spacing: -0.5px;
+		@include largeDesktops-x {
+			width: 100%;
+		}
+	}
+	&__title {
+		font-family: 'Gilroy';
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 42px;
+		color: $c-primary;
+		margin-bottom: 50px;
+		span {
+			display: inline-block;
+			@include landscapePhones {
+				display: none;
+			}
+		}
+		.mobile {
+			display: none;
+			@include landscapePhones {
+				display: block;
+			}
+		}
+  }
+	&__descr {
+		font-family: 'ProximaNova', sans-serif;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 28px;
+		color: $c-stone;
+		opacity: 0.7;
+		span {
+			display: inline-block;
+			@include landscapePhones {
+				display: none;
+			}
+		}
+		.mobile {
+			display: none;
+			@include landscapePhones {
+				display: block;
+			}
+		}
+	}
+
+	&__caption {
+		font-size: 24px;
+		line-height: 34px;
+		font-weight: bold;
+		color: $c-primary;
+		margin-bottom: 24px;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 15px;
+	}
+	&__list-item {
+		display: flex;
+		align-items: center;
+		column-gap: 20px;
+	}
+}

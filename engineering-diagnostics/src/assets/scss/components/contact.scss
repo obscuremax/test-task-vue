@@ -1,0 +1,46 @@
+.contact {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 12px;
+	letter-spacing: -0.5px;
+	
+	&__title {
+		display: flex;
+		align-items: center;
+		column-gap: 7px;
+		margin-bottom: 7px;
+		color: $c-white;
+		opacity: 0.5;
+		@include mobile {
+			justify-content: center;
+		}
+	}
+	&__descr {
+		display: flex;
+		align-items: flex-end;
+		column-gap: 10px;
+		font-size: 14px;
+		color: $c-attention;
+	}
+	&__descr-img {
+    margin-bottom: 1px;
+	}
+	&__link {
+		color: inherit;
+	}
+	
+}
+.contact:last-child {
+	.contact__title, .contact__descr {
+		justify-content: flex-end;
+		@include mobile {
+			justify-content: center;
+		}
+	}
+	.contact__link {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 24px;
+		color: $c-white;
+	}
+}

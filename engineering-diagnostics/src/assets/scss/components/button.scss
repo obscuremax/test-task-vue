@@ -1,0 +1,28 @@
+.btn {
+	border: 0;
+	outline: none;
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	padding: 29px 57px 26px 58px;
+	cursor: pointer;
+}
+.btn-primary {
+	background-color: $c-attention;
+	border-radius: 2px;
+	p {
+		font-family: "Gilroy";
+		font-weight: 800;
+		font-size: 12px;
+		line-height: 15px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: $c-black;
+	}
+	&:hover {
+		background-color: $c-attention-light;
+		-webkit-box-shadow: 0px 30px 30px -30px rgba(254, 224, 64, .7);
+		-moz-box-shadow: 0px 30px 30px -30px rgba(254, 224, 64, .7);
+		box-shadow: 0px 30px 30px -30px rgba(254, 224, 64, .7);
+	}
+}
