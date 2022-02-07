@@ -9,19 +9,19 @@ export default {
 			workList: [
 				{
 					id: 1,
-					src: require('@/assets/image/icons/icon.svg'),
+					src: require('../../assets/image/icons/icon.svg'),
 					alt: "number",
 					name: "Отчет на который на 100% можно положиться "
 				},
 				{
 					id: 2,
-					src: require('@/assets/image/icons/icon.svg'),
+					src: require('../../assets/image/icons/icon.svg'),
 					alt: "number",
 					name: "Экономию времени и прогнозируемость сроков"
 				},
 				{
 					id: 3,
-					src: require('@/assets/image/icons/icon.svg'),
+					src: require('../../assets/image/icons/icon.svg'),
 					alt: "number",
 					name: "Предварительные результаты сразу на месте"
 				},

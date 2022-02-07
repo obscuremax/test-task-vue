@@ -9,19 +9,19 @@ export default {
 			list: [
 				{
 					id: 1,
-					src: require('@/assets/image/icons/01.svg'),
+					src: require('../../assets/image/icons/01.svg'),
 					alt: "number",
 					name: "Начинаем работать без аванса"
 				},
 				{
 					id: 2,
-					src: require('@/assets/image/icons/02.svg'),
+					src: require('../../assets/image/icons/02.svg'),
 					alt: "number",
 					name: "Предоставляем отсрочку платежа"
 				},
 				{
 					id: 3,
-					src: require('@/assets/image/icons/03.svg'),
+					src: require('../../assets/image/icons/03.svg'),
 					alt: "number",
 					name: "Всегда называем справедливую цену"
 				},

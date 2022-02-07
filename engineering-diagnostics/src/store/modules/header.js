@@ -19,7 +19,7 @@ export default {
 				},
 			],
 			logo: {
-				src: require('@/assets/image/icons/logo.svg'),
+				src: require('../../assets/image/icons/logo.svg'),
 				href: "/",
 				name: "logo"
 			},
@@ -30,7 +30,7 @@ export default {
 					link: "info@diagnistics.by",
 					imgTitle: false,
 					imgDescr: true,
-					descrSrc: require('@/assets/image/icons/mail.svg'),
+					descrSrc: require('../../assets/image/icons/mail.svg'),
 					descrAlt: "foto",
 					type: "email",
 					email: "info@diagnistics.by"
@@ -41,7 +41,7 @@ export default {
 					link: "+375 (29) 456-45-45",
 					imgTitle: true,
 					imgDescr: false,
-					titleSrc: require('@/assets/image/icons/phone.svg'),
+					titleSrc: require('../../assets/image/icons/phone.svg'),
 					titleAlt: "foto",
 					type: "tel",
 					tel: "+375294564545"
