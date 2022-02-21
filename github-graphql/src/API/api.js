@@ -1,7 +1,7 @@
 export default function config(conf) {
   
   const url = "https://api.github.com/graphql";
-  const token = "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";
+  const token = "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";
   
   const headers = { 
     'Authorization': `Bearer ${token}`, 
